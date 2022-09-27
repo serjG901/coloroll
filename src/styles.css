@@ -42,7 +42,7 @@
   --red: #508a27;
 }
 
-.scheme3 {
+.scheme5 {
   --green: #cf3902;
   --yellow: #d39802;
   --blue: #e99d82;
@@ -56,6 +56,14 @@
   --blue: #296278;
   --orange: #0d0729;
   --red: #c77802;
+}
+
+.scheme3 {
+  --green: #C4E061;
+  --yellow: #213F0B;
+  --blue: #FEFE74;
+  --orange: #000000;
+  --red: #7DCB45;
 }
 
 .game {

@@ -10,7 +10,7 @@ export default function App() {
   const [gameState, setGameState] = React.useState("start");
   const [theme, setTheme] = React.useState(() => {
     const rr = Math.round(Math.random() * 10);
-    const r = Math.round((rr * (4 - 1)) / 10);
+    const r = Math.round((rr * 5) / 10);
     return r;
   });
   const clickColor = (color) => {
@@ -58,7 +58,7 @@ export default function App() {
       //window.navigator.vibrate([500]);
     } else if (userListColor.length === listColor.length) {
       setGameState("you win");
-     // window.navigator.vibrate([200, 100, 200]);
+      // window.navigator.vibrate([200, 100, 200]);
     }
   }, [userListColor, listColor]);
 
@@ -132,6 +132,8 @@ export default function App() {
                 ? "не верно"
                 : gameState === "you win"
                 ? "правильно"
+                : gameState === "your turn"
+                ? "твой ход"
                 : `запоминай`}
             </div>
             <div className="stage">
