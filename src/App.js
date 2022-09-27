@@ -23,7 +23,7 @@ export default function App() {
         setUserListColor([]);
         setListColor(randomList());
       } else {
-        window.navigator.vibrate([100]);
+        //window.navigator.vibrate([100]);
         setActiveColor(color);
         setTimeout(() => {
           setActiveColor("");
@@ -55,10 +55,10 @@ export default function App() {
       listColor[userListColor.length - 1]
     ) {
       setGameState("you lose");
-      window.navigator.vibrate([500]);
+      //window.navigator.vibrate([500]);
     } else if (userListColor.length === listColor.length) {
       setGameState("you win");
-      window.navigator.vibrate([200, 100, 200]);
+     // window.navigator.vibrate([200, 100, 200]);
     }
   }, [userListColor, listColor]);
 
